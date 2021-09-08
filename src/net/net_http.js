@@ -230,7 +230,7 @@ goowy.net.http = function () {
                                 }
                             }
 
-                            if (contentType == goowy.net.http.ContentType.JSON || goowy.string.endsWith(url, ".json")) {
+                            if (contentType === goowy.net.http.ContentType.JSON || goowy.string.endsWith(url, ".json")) {
                                 response = JSON.parse(xhr.responseText)
                             } else {
                                 if (xhr.responseXML != null) {
